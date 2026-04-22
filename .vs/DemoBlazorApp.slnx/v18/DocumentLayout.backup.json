@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\work\\Blazor\\DemoBlazorApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0F1BBF-C5B9-5F0A-DCDA-0D92AB560365}|DemoBlazorApp.Test\\DemoBlazorApp.Test.csproj|c:\\work\\blazor\\demoblazorapp\\demoblazorapp.test\\basetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0F1BBF-C5B9-5F0A-DCDA-0D92AB560365}|DemoBlazorApp.Test\\DemoBlazorApp.Test.csproj|solutionrelative:demoblazorapp.test\\basetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0F1BBF-C5B9-5F0A-DCDA-0D92AB560365}|DemoBlazorApp.Test\\DemoBlazorApp.Test.csproj|c:\\work\\blazor\\demoblazorapp\\demoblazorapp.test\\executable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0F1BBF-C5B9-5F0A-DCDA-0D92AB560365}|DemoBlazorApp.Test\\DemoBlazorApp.Test.csproj|solutionrelative:demoblazorapp.test\\executable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0F1BBF-C5B9-5F0A-DCDA-0D92AB560365}|DemoBlazorApp.Test\\DemoBlazorApp.Test.csproj|c:\\work\\blazor\\demoblazorapp\\demoblazorapp.test\\usercodedirectory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0F1BBF-C5B9-5F0A-DCDA-0D92AB560365}|DemoBlazorApp.Test\\DemoBlazorApp.Test.csproj|solutionrelative:demoblazorapp.test\\usercodedirectory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0F1BBF-C5B9-5F0A-DCDA-0D92AB560365}|DemoBlazorApp.Test\\DemoBlazorApp.Test.csproj|c:\\work\\blazor\\demoblazorapp\\demoblazorapp.test\\blazortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0F1BBF-C5B9-5F0A-DCDA-0D92AB560365}|DemoBlazorApp.Test\\DemoBlazorApp.Test.csproj|solutionrelative:demoblazorapp.test\\blazortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 39,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserCodeDirectory.cs",
+              "DocumentMoniker": "C:\\work\\Blazor\\DemoBlazorApp\\DemoBlazorApp.Test\\UserCodeDirectory.cs",
+              "RelativeDocumentMoniker": "DemoBlazorApp.Test\\UserCodeDirectory.cs",
+              "ToolTip": "C:\\work\\Blazor\\DemoBlazorApp\\DemoBlazorApp.Test\\UserCodeDirectory.cs",
+              "RelativeToolTip": "DemoBlazorApp.Test\\UserCodeDirectory.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T14:09:56.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Executable.cs",
+              "DocumentMoniker": "C:\\work\\Blazor\\DemoBlazorApp\\DemoBlazorApp.Test\\Executable.cs",
+              "RelativeDocumentMoniker": "DemoBlazorApp.Test\\Executable.cs",
+              "ToolTip": "C:\\work\\Blazor\\DemoBlazorApp\\DemoBlazorApp.Test\\Executable.cs",
+              "RelativeToolTip": "DemoBlazorApp.Test\\Executable.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T14:07:45.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseTest.cs",
+              "DocumentMoniker": "C:\\work\\Blazor\\DemoBlazorApp\\DemoBlazorApp.Test\\BaseTest.cs",
+              "RelativeDocumentMoniker": "DemoBlazorApp.Test\\BaseTest.cs",
+              "ToolTip": "C:\\work\\Blazor\\DemoBlazorApp\\DemoBlazorApp.Test\\BaseTest.cs",
+              "RelativeToolTip": "DemoBlazorApp.Test\\BaseTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T13:44:12.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BlazorTests.cs",
+              "DocumentMoniker": "C:\\work\\Blazor\\DemoBlazorApp\\DemoBlazorApp.Test\\BlazorTests.cs",
+              "RelativeDocumentMoniker": "DemoBlazorApp.Test\\BlazorTests.cs",
+              "ToolTip": "C:\\work\\Blazor\\DemoBlazorApp\\DemoBlazorApp.Test\\BlazorTests.cs",
+              "RelativeToolTip": "DemoBlazorApp.Test\\BlazorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:15:08.596Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
