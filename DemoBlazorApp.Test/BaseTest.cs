@@ -18,8 +18,26 @@ public abstract class BaseTest
     [OneTimeSetUp]
     public async Task StartBlazorApp()
     {
-        var blazorApp = new Executable(Path.Combine(UserCodeDirectory.FullDemoBlazorAppPath.Value, "DemoBlazorApp.exe"));
-        await blazorApp.StartAsync("--urls=http://localhost:5000");
+        var appDir = UserCodeDirectory.FullDemoBlazorAppPath.Value;
+        var exePath = Path.Combine(appDir, "DemoBlazorApp.exe");
+
+        // The app runs from its build output (not a publish folder). Static web assets
+        // (wwwroot, bootstrap, scoped CSS) are only resolved from the build manifest
+        // in the Development environment.
+        var environment = new Dictionary<string, string> { ["ASPNETCORE_ENVIRONMENT"] = "Development" };
+
+        if (File.Exists(exePath))
+        {
+            // Start the apphost exe directly if present
+            blazorApp = new Executable(exePath, appDir);
+            await blazorApp.StartAsync("--urls=http://localhost:5000", environment);
+        }
+        else
+        {
+            // Fall back to starting the DLL via `dotnet`
+            blazorApp = new Executable("dotnet", appDir);
+            await blazorApp.StartAsync("DemoBlazorApp.dll --urls=http://localhost:5000", environment);
+        }
 
         await WaitForBlazorToBeReady("http://localhost:5000");
     }
@@ -53,7 +71,11 @@ public abstract class BaseTest
     }
 
     [OneTimeTearDown]
-    public async Task StopBlazorAppAsync() => await blazorApp?.StopAsync();
+    public async Task StopBlazorAppAsync()
+    {
+        if (blazorApp != null)
+            await blazorApp.StopAsync();
+    }
 
     [TearDown]
     public async Task Cleanup()

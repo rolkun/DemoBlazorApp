@@ -1,5 +1,4 @@
 <Solution>
   <Project Path="DemoBlazorApp.Test/DemoBlazorApp.Test.csproj" />
   <Project Path="DemoBlazorApp/DemoBlazorApp.csproj" />
-  <Project Path="DemoBlazorAppTest/DemoBlazorAppTest.csproj" Id="f190837d-7ab6-4255-91f2-1452e1303398" />
 </Solution>
