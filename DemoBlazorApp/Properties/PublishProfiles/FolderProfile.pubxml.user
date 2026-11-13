@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
-<Project>
-  <PropertyGroup>
-    <_PublishTargetUrl>C:\work\Blazor\DemoBlazorApp\artifacts\DemoBlazorApp</_PublishTargetUrl>
-    <History>True|2026-03-23T14:01:52.0253748Z||;True|2026-03-23T14:41:46.0310585+01:00||;True|2026-03-18T14:40:39.0253715+01:00||;False|2026-03-18T14:40:09.5150705+01:00||;True|2026-03-18T12:48:36.3389148+01:00||;True|2026-03-18T12:47:18.4453736+01:00||;True|2026-03-18T12:46:42.0844247+01:00||;</History>
-    <LastFailureDetails />
-  </PropertyGroup>
-</Project>

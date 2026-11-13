@@ -6,13 +6,18 @@ internal class Executable
     private readonly string workingDirectory;
     private Process? process;
 
-    public Executable(string fullPath)
+    // fullPath: executable to run (e.g. path to exe or "dotnet")
+    // workingDirectory: directory where the process will be started (if null, derived from fullPath)
+    public Executable(string fullPath, string? workingDirectory = null)
     {
         this.fullPath = fullPath;
-        this.workingDirectory = Path.GetDirectoryName(fullPath)!;
+        if (!string.IsNullOrEmpty(workingDirectory))
+            this.workingDirectory = workingDirectory;
+        else
+            this.workingDirectory = Path.GetDirectoryName(fullPath)!;
     }
 
-    public async Task StartAsync(string arguments = "")
+    public async Task StartAsync(string arguments = "", IDictionary<string, string>? environment = null)
     {
         var psi = new ProcessStartInfo
         {
@@ -24,6 +29,12 @@ internal class Executable
             RedirectStandardError = true,
             CreateNoWindow = true
         };
+
+        if (environment != null)
+        {
+            foreach (var (key, value) in environment)
+                psi.Environment[key] = value;
+        }
 
         process = new Process { StartInfo = psi, EnableRaisingEvents = true };
         process.Start();

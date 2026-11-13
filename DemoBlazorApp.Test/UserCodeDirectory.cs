@@ -9,7 +9,8 @@ internal static class UserCodeDirectory
 
     private static Dictionary<string, string> Parameters = new()
     {
-        { "DemoBlazerAppFilesRoot", @"..\..\..\..\artifacts\DemoBlazorApp\" } ,
+        // build output of the DemoBlazorApp project (BaseOutputPath = ..\artifacts)
+        { "DemoBlazerAppFilesRoot", @"..\..\..\..\artifacts\Debug\net10.0\" } ,
         { "ECU300SimulationFilesRoot", @"..\..\..\ECU300\plc\artifacts\Simulation\" } ,
         { "ECU300FilesRoot", @"..\..\..\ECU300\net\artifacts\Release\" } ,
         { "ECU300TempLogFilesRoot", @".\TestReports\Logs\" } ,
@@ -29,27 +30,17 @@ internal static class UserCodeDirectory
 
     private static string RetrieveDirectoryPathFromGlobalVariable(string variableName)
     {
-        try
+        string variableContent = Parameters[variableName];
+        string path = Path.GetFullPath(variableContent);
+        if (!Directory.Exists(path))
         {
-            string variableContent = Parameters[variableName];
-            string path = Path.GetFullPath(variableContent);
-            if (!Directory.Exists(path))
-            {
-                Console.WriteLine("Test", string.Format(
-                        CultureInfo.InvariantCulture,
-                        "The variable {0} contains value '{1}' which is resolved to directory '{2}' which does not exists",
-                        variableName,
-                        variableContent,
-                        path));
-
-                Directory.CreateDirectory(path);
-            }
-            return path;
+            throw new DirectoryNotFoundException(string.Format(
+                CultureInfo.InvariantCulture,
+                "The variable {0} contains value '{1}' which is resolved to directory '{2}' which does not exist.",
+                variableName,
+                variableContent,
+                path));
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine("test", ex.Message);
-            return string.Empty;
-        }
+        return path;
     }
 }

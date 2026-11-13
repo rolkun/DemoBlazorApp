@@ -5,3 +5,12 @@
 /DemoBlazorApp.Test/bin/
 /DemoBlazorApp.Test/obj/
 /DemoBlazorApp/obj/
+
+# Visual Studio / IDE
+.vs/
+*.user
+*.suo
+
+# Build output
+bin/
+obj/
